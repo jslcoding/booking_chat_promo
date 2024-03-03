@@ -21,8 +21,8 @@ Users should be able to:
 ![](./images/screenshot.png)
 
 ### Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/jslcoding/booking_chat_promo](https://github.com/jslcoding/booking_chat_promo)
+- Live Site URL: [https://jslcoding.github.io/booking_chat_promo/](https://jslcoding.github.io/booking_chat_promo/)
 
 ### Built with
 - Semantic HTML5 markup
