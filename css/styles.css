@@ -563,9 +563,9 @@ video {
   margin-bottom: 0px;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-6 {
@@ -826,24 +826,39 @@ main::before{
         );
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 60rem;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%);
   z-index: -1;
 }
 
+@media (min-width:1024px) {
+  main::before{
+    width: 50%;
+    height: 60rem;
+  }
+}
+
 main::after{
   content:"";
   position: absolute;
   background-color:hsl(270, 20%, 96%);
-  top:25%;
+  top:45%;
   right: 0;
-  width: 50%;
-  height: 60rem;
+  width: 100%;
+  height: 70%;
   border-radius: 50% 50% 0 0;
   transform: translateX(50%);
   z-index: -1;
+}
+
+@media (min-width:1024px){
+  main::after {
+    top:25%;
+    width: 50%;
+    height:58rem;
+  }
 }
 
 .gradient {
