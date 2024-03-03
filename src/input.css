@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --font: "Rubik", sans-serif; }
+body {
+    font-size: 1.2rem;
+    font-family: var(--font);
+}
+main{
+    position: relative;
+    overflow-x: clip;
+}
+main::before{
+    content:"";
+    position: absolute;    
+    background: linear-gradient(
+        to bottom,
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+        );
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 60rem;
+    border-radius: 0 0 50% 50%; 
+    transform: translateX(-50%); 
+    z-index: -1;
+}
+main::after{
+    content:"";
+    position: absolute;    
+    background-color:hsl(270, 20%, 96%);
+    top:25%;
+    right: 0;
+    width: 50%;
+    height: 60rem;
+    border-radius: 50% 50% 0 0; 
+    transform: translateX(50%);   
+    z-index: -1;    
+}
+.gradient {
+    background: linear-gradient(
+        -45deg,
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+        );
+    border-radius: 1.5rem 1.5rem .8rem .8rem;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    padding: 1.5rem;
+    position: relative;
+}
+.app{
+    outline: .8rem solid #fff;
+    position: relative;
+}
+.app::before{
+    content: "";
+    background-color: hsl(271, 15%, 43%);
+    outline: .1rem inset hsl(271, 36%, 24%);
+    border-radius: 50%;
+    height: .5rem;
+    width: .5rem;
+    top:2%;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    z-index: 1;
+}
+.chat-author::before {
+    content:"<";
+    color: white;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+.chat-author::after{
+    content: "...";
+    color:#fff;
+    position: absolute;
+    top:48%;
+    left: 90%;
+    transform: rotate(90deg);
+}
+.app-bob{
+    margin: .3rem 0;
+    padding: .8rem;
+    max-width: 65%;
+    width: fit-content;
+}
+.app-bob-l{ border-radius: .8rem .8rem .8rem 0; }
+.app-bob-r{ border-radius: .8rem .8rem 0 .8rem; }
+.app-rad{ position: relative; }
+.app-type::after{
+    content: ">";
+    color: white;
+    font-size: 1.3rem;
+    background-color: hsl(271, 36%, 24%);
+    outline: .1rem solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+    padding: .5rem;
+    bottom: 14%; right: 3%;
+    position: absolute;
+}
+/*Footer*/
+footer a {transition: ease-in-out 1s;}
+footer a::before { content: "→ "; }
+footer a::after { content: " ←"; }
